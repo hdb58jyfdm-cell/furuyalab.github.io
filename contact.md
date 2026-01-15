@@ -17,6 +17,5 @@ title: Contact
 **PI:** hideki@furuyalab.org  
 
 **Affiliation (current):** Cedars-Sinai Medical Center  
-**Planned transition:** Houston Methodist (2026)
 
-*(Office address will be added after relocation.)*
+
