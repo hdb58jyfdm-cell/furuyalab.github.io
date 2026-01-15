@@ -17,7 +17,7 @@ title: Furuya Lab
 
 We are a translational cancer research lab focused on developing clinically practical biomarker strategies to improve early detection, risk stratification, and precision prevention. Our work integrates discovery-to-translation pipelines across human cohorts and experimental models, with emphasis on reproducible assays and biologically grounded interpretation.
 
-**Current affiliation:** Cedars-Sinai Medical Center
+**Affiliation:** Cedars-Sinai Medical Center
 
 ---
 
