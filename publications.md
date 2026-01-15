@@ -26,4 +26,3 @@ title: Publications
 
 ---
 
-If you want, send me your top publications (or your CV list) and I’ll format this cleanly with consistent style and links.
