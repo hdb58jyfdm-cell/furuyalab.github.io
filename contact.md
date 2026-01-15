@@ -16,6 +16,6 @@ title: Contact
 **General:** info@furuyalab.org  
 **PI:** hideki@furuyalab.org  
 
-**Affiliation (current):** Cedars-Sinai Medical Center  
+**Affiliation:** Cedars-Sinai Medical Center  
 
 
