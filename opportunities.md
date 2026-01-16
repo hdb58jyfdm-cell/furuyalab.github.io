@@ -24,7 +24,7 @@ We are always interested in hearing from thoughtful, motivated people who want t
 - Comfort with either wet lab, computational analysis, or both
 
 ## How to reach out
-Email **info@furuyalab.org** with:
+Email <a href="mailto:info@furuyalab.org">info@furuyalab.org</a> with:
 - CV
 - 2–3 sentences about your interests
 - A paper/project you’re proud of
