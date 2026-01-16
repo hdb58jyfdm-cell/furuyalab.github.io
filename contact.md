@@ -13,7 +13,7 @@ title: Contact
 
 # Contact
 
-**General:** info@furuyalab.org  
+**General:** <a href="mailto:info@furuyalab.org">info@furuyalab.org</a>  
 **PI:** <a href="mailto:hideki@furuyalab.org">hideki@furuyalab.org</a>  
 
 **Affiliation:** Cedars-Sinai Medical Center  
