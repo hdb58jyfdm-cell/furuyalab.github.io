@@ -13,7 +13,7 @@ title: Publications
 
 # Publications
 
-## Full list
+## Recent list
 
 **Legend:** `*` Corresponding author · `^` Co-first author
 
