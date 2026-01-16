@@ -17,5 +17,6 @@ title: Contact
 **PI:** <a href="mailto:hideki@furuyalab.org">hideki@furuyalab.org</a>  
 
 **Affiliation:** Cedars-Sinai Medical Center  
-
+**URL:** <a href="https://www.cedars-sinai.edu/health-sciences-university/research/labs/furuya.html" target="_blank" rel="noopener">Cedars-Sinai</a> 
+**LinkedIn:** www.linkedin.com/in/hideki-furuya-32064086
 
