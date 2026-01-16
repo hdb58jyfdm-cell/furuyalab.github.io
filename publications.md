@@ -68,5 +68,7 @@ title: Publications
 ---
 
 ## Full list links
-- Google Scholar: https://scholar.google.com/citations?user=yriwzHAAAAAJ&hl=en
-- PubMed: https://www.ncbi.nlm.nih.gov/myncbi/hideki.furuya.1/bibliography/public/
+- Google Scholar: <a href="https://scholar.google.com/citations?user=yriwzHAAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+- PubMed: <a href="https://www.ncbi.nlm.nih.gov/myncbi/hideki.furuya.1/bibliography/public/" target="_blank" rel="noopener">PubMed bibliography</a>
+
+
