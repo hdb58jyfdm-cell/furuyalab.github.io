@@ -103,8 +103,3 @@ title: Home
   </p>
 
 </div>
-
-
----
-
-<small>© Furuya Lab. All rights reserved.</small>
