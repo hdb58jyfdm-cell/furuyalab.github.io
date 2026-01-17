@@ -78,7 +78,7 @@
     </p>
   </div>
 
-  <!-- RESEARCH FOCUS -->
+    <!-- RESEARCH FOCUS -->
   <div class="card feature">
     <h2>Research focus</h2>
     <ul class="small">
@@ -91,6 +91,11 @@
     <img src="/assets/img/feature1.jpg" alt="Biomarker assay and urine biomarker analysis">
     <p class="small muted" style="margin:10px 0 0;">
       Multiplex biomarker assay development and validation.
+    </p>
+
+    <img src="/assets/img/feature2.jpg" alt="Spatial biology, imaging, and radiogenomics" style="margin-top:16px;">
+    <p class="small muted" style="margin:10px 0 0;">
+      Integrating imaging, spatial biology, and multi-omics to connect tissue biology with liquid biomarkers.
     </p>
   </div>
 
