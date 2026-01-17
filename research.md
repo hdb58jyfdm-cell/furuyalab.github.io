@@ -1,3 +1,7 @@
+---
+title: Research
+---
+
 <nav>
   <a href="/">Home</a> |
   <a href="/research">Research</a> |
