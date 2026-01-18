@@ -74,10 +74,10 @@ title: Team
       </p>
 
       <p class="small">
-        I received my PhD from <strong>Meiji University (Tokyo, Japan)</strong> and completed postdoctoral
-        training at the <strong>Medical University of South Carolina</strong> and the
-        <strong>University of Hawaiʻi Cancer Center</strong>. I later joined UHCC as an Assistant Professor
-        before moving to <strong>Cedars-Sinai Medical Center</strong>, where I opened my independent laboratory.
+        I received my PhD from Meiji University (Tokyo, Japan) and completed postdoctoral
+        training at the Medical University of South Carolina and the
+        University of Hawaiʻi Cancer Center. I later joined UHCC as an Assistant Professor
+        before moving to Cedars-Sinai Medical Center, where I opened my independent laboratory.
       </p>
 
       <p class="small">
