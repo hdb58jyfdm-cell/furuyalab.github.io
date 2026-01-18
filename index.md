@@ -22,8 +22,20 @@ title: Home
   .grid { display: grid; grid-template-columns: 1fr; gap: 18px; margin-top: 18px; }
   .card { border: 1px solid rgba(0,0,0,.08); border-radius: 14px; padding: 16px; background: rgba(0,0,0,.01); }
   .card h2 { margin-top: 0; font-size: 1.2rem; }
-  .profile { display: grid; grid-template-columns: 96px 1fr; gap: 14px; align-items: start; }
-  .avatar { width: 96px; height: 96px; border-radius: 14px; object-fit: cover; border: 1px solid rgba(0,0,0,.08); }
+  .profile {
+  display: grid;
+  grid-template-columns: 180px 1fr; /* was 96px */
+  gap: 16px;
+  align-items: start;
+}
+
+.avatar {
+  width: 180px;        /* was 96px */
+  height: 180px;       /* was 96px */
+  border-radius: 16px; /* slightly rounder looks nicer at larger size */
+  object-fit: cover;
+  border: 1px solid rgba(0,0,0,.08);
+}
   .pillrow { display:flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
   .pill { padding: 6px 10px; border-radius: 999px; border: 1px solid rgba(0,0,0,.12); font-size: .88rem; background: white; }
   .small { font-size: .96rem; line-height: 1.65; }
