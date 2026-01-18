@@ -5,53 +5,78 @@ title: Team
 <nav>
   <a href="/">Home</a> |
   <a href="/research">Research</a> |
-  <a href="/publications">Publications</a> |
   <a href="/team">Team</a> |
+  <a href="/publications">Publications</a> |
   <a href="/opportunities">Opportunities</a> |
   <a href="/contact">Contact</a>
 </nav>
 
 <style>
   .wrap { max-width: 980px; margin: 0 auto; padding: 0 14px; }
-  .card { border: 1px solid rgba(0,0,0,.08); border-radius: 14px; padding: 18px; background: rgba(0,0,0,.01); margin-top: 18px; }
+
+  .card {
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 14px;
+    padding: 18px;
+    background: rgba(0,0,0,.01);
+    margin-top: 18px;
+  }
+
   h1, h2 { margin-top: 0; }
+
   .small { font-size: .96rem; line-height: 1.65; }
   .muted { opacity: .85; }
 
   /* PI profile */
   .pi-profile {
     display: grid;
-    grid-template-columns: 180px 1fr;
-    gap: 20px;
+    grid-template-columns: 200px 1fr;
+    gap: 22px;
     align-items: start;
   }
+
   .pi-photo {
-    width: 180px;
-    height: 220px;
+    width: 200px;
+    height: 240px;
     object-fit: cover;
     border-radius: 14px;
     border: 1px solid rgba(0,0,0,.1);
   }
 
-  /* Team grid */
-  .team-grid {
+  /* Recruiting grid */
+  .grid2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 18px;
     margin-top: 12px;
   }
+
   .member {
-    border: 1px dashed rgba(0,0,0,.15);
-    border-radius: 14px;
-    padding: 16px;
-    background: rgba(0,0,0,.02);
     text-align: center;
   }
 
+  .ph {
+    width: 100%;
+    height: 160px;
+    border-radius: 12px;
+    border: 1px dashed rgba(0,0,0,.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .9rem;
+    color: rgba(0,0,0,.45);
+    margin-bottom: 12px;
+    background: rgba(0,0,0,.02);
+  }
+
+  .mname { margin: 6px 0 2px; font-size: 1.05rem; }
+  .mrole { margin: 0; font-weight: 600; opacity: .9; }
+  .mbio { margin-top: 8px; }
+
   @media (max-width: 820px){
     .pi-profile { grid-template-columns: 1fr; }
-    .team-grid { grid-template-columns: 1fr; }
     .pi-photo { margin: 0 auto; }
+    .grid2 { grid-template-columns: 1fr; }
   }
 </style>
 
@@ -82,33 +107,46 @@ title: Team
 
       <p class="small">
         My research integrates human cohorts, multi-omics, spatial biology, and rigorous analytical
-        validation to develop non-invasive diagnostic strategies that can improve risk stratification
+        validation to develop non-invasive diagnostic strategies that improve risk stratification
         and patient care.
       </p>
     </div>
   </div>
 </div>
 
-<!-- LAB MEMBERS -->
+<!-- LAB MEMBERS / RECRUITING -->
 <div class="card">
-  <h2>Lab Members</h2>
+  <h2>Lab members</h2>
 
-  <div class="team-grid">
-    <div class="member">
-      <p class="muted"><strong>Position open</strong></p>
-      <p class="small">Postdoctoral Fellow</p>
+  <div class="grid2">
+
+    <div class="card member">
+      <div class="ph">Photo</div>
+      <p class="mname"><strong>We’re recruiting</strong></p>
+      <p class="mrole">Postdoctoral fellows</p>
+      <p class="small mbio">
+        Biomarkers, assay development and validation, multi-omics integration,
+        spatial biology, and radiogenomics.
+      </p>
+      <p class="small" style="margin-top:12px;">
+        <a href="/opportunities">See openings</a>
+      </p>
     </div>
 
-    <div class="member">
-      <p class="muted"><strong>Position open</strong></p>
-      <p class="small">Graduate Student / Research Associate</p>
+    <div class="card member">
+      <div class="ph">Photo</div>
+      <p class="mname"><strong>We’re recruiting</strong></p>
+      <p class="mrole">Research staff & trainees</p>
+      <p class="small mbio">
+        Research associates/technicians, graduate and undergraduate trainees,
+        and computational collaborators.
+      </p>
+      <p class="small" style="margin-top:12px;">
+        <a href="/contact">Get in touch</a>
+      </p>
     </div>
+
   </div>
-
-  <p class="small muted" style="margin-top:14px;">
-    Motivated trainees and collaborators are welcome.
-    See <a href="/opportunities">Opportunities</a> for more information.
-  </p>
 </div>
 
 <p style="margin:28px 0 10px;">
