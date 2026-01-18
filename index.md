@@ -29,6 +29,24 @@ title: Home
   .small { font-size: .96rem; line-height: 1.65; }
   .muted { opacity: .85; }
   .feature img { width: 100%; border-radius: 12px; border: 1px solid rgba(0,0,0,.08); margin-top: 10px; }
+
+  /* NEW: two images side-by-side */
+  .image-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 12px;
+  }
+  .image-row img {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,.08);
+    margin-top: 0; /* override .feature img margin-top */
+    display: block;
+  }
+  @media (max-width: 700px) {
+    .image-row { grid-template-columns: 1fr; }
+  }
 </style>
 
 <div class="wrap">
@@ -82,7 +100,7 @@ title: Home
     </p>
   </div>
 
-    <!-- RESEARCH FOCUS -->
+  <!-- RESEARCH FOCUS -->
   <div class="card feature">
     <h2>Research focus</h2>
     <ul class="small">
@@ -92,15 +110,22 @@ title: Home
       <li>Spatial and multi-omics profiling to connect tissue biology to liquid biomarkers</li>
     </ul>
 
-    <img src="/assets/img/feature1.jpg" alt="Biomarker assay and urine biomarker analysis">
-    <p class="small muted" style="margin:10px 0 0;">
-      Multiplex biomarker assay development and validation.
-    </p>
+    <!-- NEW: images on the same row -->
+    <div class="image-row">
+      <div>
+        <img src="/assets/img/feature1.jpg" alt="Multiplex biomarker assay development and validation">
+        <p class="small muted" style="margin:10px 0 0;">
+          Multiplex biomarker assay development and validation.
+        </p>
+      </div>
 
-    <img src="/assets/img/feature2.jpg" alt="Spatial biology, imaging, and radiogenomics" style="margin-top:16px;">
-    <p class="small muted" style="margin:10px 0 0;">
-      Integrating imaging, spatial biology, and multi-omics to connect tissue biology with liquid biomarkers.
-    </p>
+      <div>
+        <img src="/assets/img/feature2.jpg" alt="Spatial biology, imaging, and radiogenomics">
+        <p class="small muted" style="margin:10px 0 0;">
+          Integrating imaging, spatial biology, and multi-omics to connect tissue biology with liquid biomarkers.
+        </p>
+      </div>
+    </div>
   </div>
 
   <p style="margin:28px 0 10px;">
