@@ -1,4 +1,6 @@
+---
 title: Furuya Lab
+---
 
 <nav>
   <a href="/">Home</a> |
