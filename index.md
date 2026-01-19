@@ -1,15 +1,21 @@
 ---
-title: Furuya Lab
+title: Home
 ---
 
-<nav>
-  <a href="/">Home</a> |
-  <a href="/research">Research</a> |
-  <a href="/team">Team</a> |
-  <a href="/publications">Publications</a> |
-  <a href="/opportunities">Opportunities</a> |
+<link rel="stylesheet" href="/assets/css/site.css">
+
+<nav class="topnav">
+  <a href="/">Home</a>
+  <a href="/research">Research</a>
+  <a href="/team">Team</a>
+  <a href="/publications">Publications</a>
+  <a href="/opportunities">Opportunities</a>
   <a href="/contact">Contact</a>
 </nav>
+
+<div class="wrap">
+  ... your existing content ...
+</div>
 
 <style>
   .wrap { max-width: 980px; margin: 0 auto; padding: 0 14px; }
