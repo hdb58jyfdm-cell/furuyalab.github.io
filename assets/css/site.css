@@ -1,123 +1,49 @@
-/* Base */
-:root{
-  --wrap: 980px;
-  --border: rgba(0,0,0,.10);
-  --muted: rgba(0,0,0,.72);
-}
+/* ---------- Base ---------- */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: #111; }
+a { color: #0b57d0; text-decoration: none; }
+a:hover { text-decoration: underline; }
 
-*{ box-sizing: border-box; }
+/* ---------- Layout ---------- */
+.wrap { max-width: 980px; margin: 0 auto; padding: 0 14px; }
+.site-main { padding: 8px 0 30px; }
+.site-footer { padding: 22px 0 28px; text-align: center; color: rgba(0,0,0,.75); }
 
-body{
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-  line-height: 1.6;
-  color: #111;
-  background: #fff;
-}
+/* ---------- Hero ---------- */
+.hero { margin: 14px 0 18px; border-radius: 14px; overflow: hidden; border: 1px solid rgba(0,0,0,.08); background: #fff; }
+.hero img { width: 100%; height: auto; display: block; }
+.hero-cap { padding: 16px 18px; background: rgba(0,0,0,.02); }
 
-.wrap{
-  max-width: var(--wrap);
-  margin: 0 auto;
-  padding: 0 14px;
-}
+.kicker { letter-spacing: .10em; text-transform: uppercase; font-size: .90rem; opacity: .85; margin: 0 0 6px; font-weight: 700; }
+.title { font-size: 2.0rem; margin: 6px 0 8px; font-weight: 800; }
+.lead { font-size: 1.05rem; line-height: 1.65; margin: 0; }
 
-/* HERO */
-.site-hero{
-  padding: 14px 0 0;
-}
+.pillrow { display:flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.pill { padding: 6px 10px; border-radius: 999px; border: 1px solid rgba(0,0,0,.12); font-size: .88rem; background: white; }
 
-.hero-card{
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  overflow: hidden;
-  background: #fff;
-}
+/* ---------- Nav (centered, below hero text) ---------- */
+.site-nav { margin-top: 16px; display: flex; gap: 22px; justify-content: center; flex-wrap: wrap; }
+.navlink { font-weight: 700; font-size: 1.05rem; }
 
-.hero-img{
-  width: 100%;
-  height: auto;
-  display: block;
-}
+/* ---------- Cards ---------- */
+.card { border: 1px solid rgba(0,0,0,.08); border-radius: 14px; padding: 16px; background: rgba(0,0,0,.01); margin-top: 18px; }
+.card h2 { margin: 0 0 10px; font-size: 1.2rem; }
+.small { font-size: .96rem; line-height: 1.65; }
+.muted { opacity: .85; }
 
-.hero-cap{
-  padding: 18px 18px 16px;
-  background: rgba(0,0,0,.02);
-}
+/* PI block */
+.profile { display: grid; grid-template-columns: 160px 1fr; gap: 14px; align-items: start; }
+.avatar { width: 160px; height: 160px; border-radius: 14px; object-fit: cover; border: 1px solid rgba(0,0,0,.08); }
 
-.hero-kicker{
-  letter-spacing: .14em;
-  text-transform: uppercase;
-  font-size: .92rem;           /* bigger than before */
-  font-weight: 700;
-  color: rgba(0,0,0,.78);
-}
+/* Research images side-by-side */
+.imgrow { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+.imgcard img { width: 100%; height: auto; border-radius: 12px; border: 1px solid rgba(0,0,0,.08); display: block; }
+.imgcap { margin: 8px 0 0; font-size: .92rem; opacity: .85; }
 
-.hero-title{
-  margin: 10px 0 8px;
-  font-size: 2.25rem;
-  line-height: 1.15;
-  font-weight: 750;
-}
-
-.hero-lead{
-  margin: 0 0 14px;
-  font-size: 1.05rem;
-  color: var(--muted);
-}
-
-/* Pills */
-.pillrow{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 0 0 14px;
-}
-
-.pill{
-  padding: 7px 12px;
-  border-radius: 999px;
-  border: 1px solid rgba(0,0,0,.14);
-  background: #fff;
-  font-size: .92rem;
-}
-
-/* NAV (centered, below hero text) */
-.site-nav{
-  display: flex;
-  justify-content: center;   /* centers the row */
-  flex-wrap: wrap;
-  gap: 18px;
-  padding-top: 10px;
-  margin-top: 10px;
-  border-top: 1px solid rgba(0,0,0,.08);
-}
-
-.navlink{
-  text-decoration: none;
-  font-weight: 650;
-}
-
-.navlink:hover{
-  text-decoration: underline;
-}
-
-/* Main content */
-.site-main{
-  padding: 18px 0 18px;
-}
-
-.site-main h1, .site-main h2, .site-main h3{
-  line-height: 1.25;
-}
-
-/* Footer */
-.site-footer{
-  padding: 10px 0 24px;
-  color: rgba(0,0,0,.60);
-}
-
-/* Small screens */
-@media (max-width: 640px){
-  .hero-title{ font-size: 1.8rem; }
-  .site-nav{ gap: 12px; }
+/* Responsive */
+@media (max-width: 760px){
+  .title { font-size: 1.7rem; }
+  .profile { grid-template-columns: 120px 1fr; }
+  .avatar { width: 120px; height: 120px; }
+  .imgrow { grid-template-columns: 1fr; }
 }
