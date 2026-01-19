@@ -2,33 +2,64 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>
-      {% if page.title %}{{ page.title }} · {% endif %}Furuya Lab
-    </title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% if page.title %}{{ page.title }} · {% endif %}Furuya Lab</title>
     <link rel="stylesheet" href="/assets/css/site.css" />
   </head>
 
   <body>
-    <!-- Top nav (shared across all pages) -->
-    <header class="site-header">
-      <nav class="site-nav" aria-label="Primary">
-        <a href="/" class="navlink">Home</a>
-        <a href="/research" class="navlink">Research</a>
-        <a href="/team" class="navlink">Team</a>
-        <a href="/publications" class="navlink">Publications</a>
-        <a href="/opportunities" class="navlink">Opportunities</a>
-        <a href="/contact" class="navlink">Contact</a>
-      </nav>
+    <!-- Shared hero + nav across all pages -->
+    <header class="site-hero">
+      <div class="wrap">
+        <div class="hero-card">
+          <img class="hero-img" src="/assets/img/hero.jpg" alt="Furuya Lab banner image" />
+
+          <div class="hero-cap">
+            <div class="hero-kicker">FURUYA LABORATORY</div>
+
+            <h1 class="hero-title">
+              Precision cancer prevention &amp; biomarker-driven early detection
+            </h1>
+
+            <p class="hero-lead">
+              We develop and validate non-invasive biomarkers and integrative multi-omics strategies to enable earlier
+              detection, risk stratification, and precision treatment of cancer—with a major focus on bladder cancer and
+              upper-tract urothelial carcinoma.
+            </p>
+
+            <div class="pillrow" aria-label="Research keywords">
+              <span class="pill">Urine biomarkers</span>
+              <span class="pill">Multiplex protein assays</span>
+              <span class="pill">Radiogenomics</span>
+              <span class="pill">Spatial biology</span>
+              <span class="pill">Clinical translation</span>
+            </div>
+
+            <!-- NAV (moved BELOW hero text) -->
+            <nav class="site-nav" aria-label="Primary">
+              <a class="navlink" href="/">Home</a>
+              <a class="navlink" href="/research">Research</a>
+              <a class="navlink" href="/team">Team</a>
+              <a class="navlink" href="/publications">Publications</a>
+              <a class="navlink" href="/opportunities">Opportunities</a>
+              <a class="navlink" href="/contact">Contact</a>
+            </nav>
+          </div>
+        </div>
+      </div>
     </header>
 
+    <!-- Page content -->
     <main class="site-main">
-      {{ content }}
+      <div class="wrap">
+        {{ content }}
+      </div>
     </main>
 
     <footer class="site-footer">
-      <small>© Furuya Lab. All rights reserved.</small>
+      <div class="wrap">
+        <small>© Furuya Lab. All rights reserved.</small>
+      </div>
     </footer>
   </body>
 </html>
