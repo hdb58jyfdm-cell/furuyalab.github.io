@@ -2,15 +2,6 @@
 title: Team
 ---
 
-<nav>
-  <a href="/">Home</a> |
-  <a href="/research">Research</a> |
-  <a href="/team">Team</a> |
-  <a href="/publications">Publications</a> |
-  <a href="/opportunities">Opportunities</a> |
-  <a href="/contact">Contact</a>
-</nav>
-
 <style>
   .wrap { max-width: 980px; margin: 0 auto; padding: 0 14px; }
 
@@ -51,9 +42,15 @@ title: Team
     margin-top: 12px;
   }
 
-  .member {
-    text-align: center;
+  /* Recruiting tiles (avoid nested card borders) */
+  .tile {
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 14px;
+    padding: 16px;
+    background: white;
   }
+
+  .member { text-align: center; }
 
   .ph {
     width: 100%;
@@ -100,9 +97,9 @@ title: Team
 
       <p class="small">
         I received my PhD from Meiji University (Tokyo, Japan) and completed postdoctoral
-        training at the Medical University of South Carolina and the
-        University of Hawaiʻi Cancer Center. I later joined UHCC as an Assistant Professor
-        before moving to Cedars-Sinai Medical Center, where I opened my independent laboratory.
+        training at the Medical University of South Carolina and the University of Hawaiʻi Cancer Center.
+        I later joined UHCC as an Assistant Professor before moving to Cedars-Sinai Medical Center,
+        where I opened my independent laboratory.
       </p>
 
       <p class="small">
@@ -120,7 +117,7 @@ title: Team
 
   <div class="grid2">
 
-    <div class="card member">
+    <div class="tile member">
       <div class="ph">Photo</div>
       <p class="mname"><strong>We’re recruiting</strong></p>
       <p class="mrole">Postdoctoral fellows</p>
@@ -133,7 +130,7 @@ title: Team
       </p>
     </div>
 
-    <div class="card member">
+    <div class="tile member">
       <div class="ph">Photo</div>
       <p class="mname"><strong>We’re recruiting</strong></p>
       <p class="mrole">Research staff & trainees</p>
