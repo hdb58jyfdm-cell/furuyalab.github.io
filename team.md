@@ -146,8 +146,3 @@ title: Team
   </div>
 </div>
 
-<p style="margin:28px 0 10px;">
-  <small>© Furuya Lab. All rights reserved.</small>
-</p>
-
-</div>
