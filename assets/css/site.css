@@ -1,0 +1,84 @@
+/* Furuya Lab - global site styles */
+
+:root{
+  --maxw: 980px;
+  --pad: 14px;
+  --border: rgba(0,0,0,.10);
+  --muted: rgba(0,0,0,.72);
+  --bg: #ffffff;
+  --card: rgba(0,0,0,.015);
+  --link: #0a66c2;
+  --linkHover: #084d92;
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body{
+  margin: 0;
+  background: var(--bg);
+  color: #111;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a{
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover{ color: var(--linkHover); text-decoration: underline; }
+
+.wrap{
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 var(--pad);
+}
+
+/* top nav */
+.topnav{
+  max-width: var(--maxw);
+  margin: 14px auto 8px;
+  padding: 0 var(--pad);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  font-size: .98rem;
+}
+.topnav a{
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+.topnav a:hover{
+  background: rgba(0,0,0,.03);
+  border-color: rgba(0,0,0,.06);
+  text-decoration: none;
+}
+
+/* headings look nicer */
+h1{ font-size: 2rem; margin: 14px 0 8px; }
+h2{ font-size: 1.25rem; margin: 18px 0 10px; }
+p{ margin: 10px 0; }
+
+.card{
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  background: var(--card);
+}
+
+.small{ font-size: .96rem; }
+.muted{ color: var(--muted); }
+
+/* footer */
+.footer{
+  max-width: var(--maxw);
+  margin: 28px auto 22px;
+  padding: 0 var(--pad);
+  color: var(--muted);
+  font-size: .85rem;
+}
