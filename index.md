@@ -14,8 +14,6 @@ title: Home
 </nav>
 
 <div class="wrap">
-  ... your existing content ...
-</div>
 
 <style>
   .wrap { max-width: 980px; margin: 0 auto; padding: 0 14px; }
