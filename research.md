@@ -2,43 +2,62 @@
 title: Research
 ---
 
-<nav>
-  <a href="/">Home</a> |
-  <a href="/research">Research</a> |
-  <a href="/team">Team</a> |
-  <a href="/publications">Publications</a> |
-  <a href="/opportunities">Opportunities</a> |
-  <a href="/contact">Contact</a>
-</nav>
-
 # Research
 
-Our lab develops biomarker-driven strategies to enable **early detection, risk stratification, and precision prevention**. We combine mechanistic insight with clinically grounded assay development.
+<div class="card" style="max-width:980px; margin:18px auto; padding:16px; border-radius:14px; border:1px solid rgba(0,0,0,.08); background: rgba(0,0,0,.01);">
 
-## 1) Precision prevention and early detection
-We aim to identify measurable biological signals that precede clinically evident cancer and enable non-invasive detection and surveillance.
+  <p class="small" style="margin:0 0 14px; line-height:1.65;">
+    Our lab develops biomarker-driven strategies to enable <strong>early detection, risk stratification, and precision prevention</strong>.
+    We combine mechanistic insight with clinically grounded assay development.
+  </p>
 
-**Approach:** curated cohorts, PRoBE-style principles when feasible, and clinically practical assay designs.
+  <hr style="margin:18px 0; border:none; border-top:1px solid rgba(0,0,0,.12);" />
 
-## 2) Biomarker panels and assay development
-We focus on translation: building assays that are robust, scalable, and compatible with real clinical workflows.
+  <h2 style="margin:0 0 8px;">1) Precision prevention and early detection</h2>
+  <p class="small" style="margin:0 0 10px; line-height:1.65;">
+    We aim to identify measurable biological signals that precede clinically evident cancer and enable non-invasive detection and surveillance.
+  </p>
+  <p class="small" style="margin:0; line-height:1.65;">
+    <strong>Approach:</strong> curated cohorts, PRoBE-style principles when feasible, and clinically practical assay designs.
+  </p>
 
-**Examples of translation priorities**
-- multiplex protein panels (urine-based)
-- reproducible QC frameworks and analytical validation thinking
-- bridging discovery platforms → targeted assays
+  <hr style="margin:18px 0; border:none; border-top:1px solid rgba(0,0,0,.12);" />
 
-## 3) Spatial and multi-omics biology
-We connect tissue-level biology to urine/tissue biomarkers and outcomes.
+  <h2 style="margin:0 0 8px;">2) Biomarker panels and assay development</h2>
+  <p class="small" style="margin:0 0 10px; line-height:1.65;">
+    We focus on translation: building assays that are robust, scalable, and compatible with real clinical workflows.
+  </p>
+  <p class="small" style="margin:0 0 8px; line-height:1.65;"><strong>Examples of translation priorities</strong></p>
+  <ul class="small" style="margin:0 0 0 18px; line-height:1.65;">
+    <li>multiplex protein panels (urine-based)</li>
+    <li>reproducible QC frameworks and analytical validation thinking</li>
+    <li>bridging discovery platforms → targeted assays</li>
+  </ul>
 
-**Methods (examples)**
-- spatial transcriptomics / spatial proteomics
-- bulk profiling + targeted validation
-- integrative analysis across datasets and models
+  <hr style="margin:18px 0; border:none; border-top:1px solid rgba(0,0,0,.12);" />
 
-## 4) Experimental models to support temporal biology
-We leverage models to understand how early tumor-associated states evolve over time and how they shape measurable biomarker signals.
+  <h2 style="margin:0 0 8px;">3) Spatial and multi-omics biology</h2>
+  <p class="small" style="margin:0 0 10px; line-height:1.65;">
+    We connect tissue-level biology to urine/tissue biomarkers and outcomes.
+  </p>
+  <p class="small" style="margin:0 0 8px; line-height:1.65;"><strong>Methods (examples)</strong></p>
+  <ul class="small" style="margin:0 0 0 18px; line-height:1.65;">
+    <li>spatial transcriptomics / spatial proteomics</li>
+    <li>bulk profiling + targeted validation</li>
+    <li>integrative analysis across datasets and models</li>
+  </ul>
 
----
+  <hr style="margin:18px 0; border:none; border-top:1px solid rgba(0,0,0,.12);" />
 
-If you’d like to collaborate, please reach out via **[Contact](/contact)**.
+  <h2 style="margin:0 0 8px;">4) Experimental models to support temporal biology</h2>
+  <p class="small" style="margin:0; line-height:1.65;">
+    We leverage models to understand how early tumor-associated states evolve over time and how they shape measurable biomarker signals.
+  </p>
+
+  <hr style="margin:18px 0; border:none; border-top:1px solid rgba(0,0,0,.12);" />
+
+  <p class="small" style="margin:0; line-height:1.65;">
+    If you’d like to collaborate, please reach out via <strong><a href="/contact">Contact</a></strong>.
+  </p>
+
+</div>
