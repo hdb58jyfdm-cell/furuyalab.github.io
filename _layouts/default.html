@@ -2,52 +2,47 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>{% if page.title %}{{ page.title }} · {% endif %}Furuya Lab</title>
     <link rel="stylesheet" href="/assets/css/site.css" />
   </head>
 
   <body>
-    <!-- Shared hero + nav across all pages -->
-    <header class="site-hero">
-      <div class="wrap">
-        <div class="hero-card">
-          <img class="hero-img" src="/assets/img/hero.jpg" alt="Furuya Lab banner image" />
 
-          <div class="hero-cap">
-            <div class="hero-kicker">FURUYA LABORATORY</div>
+    <!-- Shared HERO (shown on all pages) -->
+    <div class="wrap">
+      <div class="hero">
+        <img src="/assets/img/hero.jpg" alt="Furuya Lab banner image" />
 
-            <h1 class="hero-title">
-              Precision cancer prevention &amp; biomarker-driven early detection
-            </h1>
+        <div class="hero-cap">
+          <div class="kicker">FURUYA LABORATORY</div>
+          <div class="title">Precision cancer prevention &amp; biomarker-driven early detection</div>
 
-            <p class="hero-lead">
-              We develop and validate non-invasive biomarkers and integrative multi-omics strategies to enable earlier
-              detection, risk stratification, and precision treatment of cancer—with a major focus on bladder cancer and
-              upper-tract urothelial carcinoma.
-            </p>
+          <p class="lead">
+            We develop and validate non-invasive biomarkers and integrative multi-omics strategies to enable earlier detection,
+            risk stratification, and precision treatment of cancer—with a major focus on bladder cancer and upper-tract urothelial carcinoma.
+          </p>
 
-            <div class="pillrow" aria-label="Research keywords">
-              <span class="pill">Urine biomarkers</span>
-              <span class="pill">Multiplex protein assays</span>
-              <span class="pill">Radiogenomics</span>
-              <span class="pill">Spatial biology</span>
-              <span class="pill">Clinical translation</span>
-            </div>
-
-            <!-- NAV (moved BELOW hero text) -->
-            <nav class="site-nav" aria-label="Primary">
-              <a class="navlink" href="/">Home</a>
-              <a class="navlink" href="/research">Research</a>
-              <a class="navlink" href="/team">Team</a>
-              <a class="navlink" href="/publications">Publications</a>
-              <a class="navlink" href="/opportunities">Opportunities</a>
-              <a class="navlink" href="/contact">Contact</a>
-            </nav>
+          <div class="pillrow">
+            <span class="pill">Urine biomarkers</span>
+            <span class="pill">Multiplex protein assays</span>
+            <span class="pill">Radiogenomics</span>
+            <span class="pill">Spatial biology</span>
+            <span class="pill">Clinical translation</span>
           </div>
+
+          <!-- Nav moved BELOW hero text (your request) -->
+          <nav class="site-nav" aria-label="Primary">
+            <a href="/" class="navlink">Home</a>
+            <a href="/research" class="navlink">Research</a>
+            <a href="/team" class="navlink">Team</a>
+            <a href="/publications" class="navlink">Publications</a>
+            <a href="/opportunities" class="navlink">Opportunities</a>
+            <a href="/contact" class="navlink">Contact</a>
+          </nav>
         </div>
       </div>
-    </header>
+    </div>
 
     <!-- Page content -->
     <main class="site-main">
@@ -56,10 +51,10 @@
       </div>
     </main>
 
+    <!-- Shared footer (only once) -->
     <footer class="site-footer">
-      <div class="wrap">
-        <small>© Furuya Lab. All rights reserved.</small>
-      </div>
+      <small>© Furuya Lab. All rights reserved.</small>
     </footer>
+
   </body>
 </html>
