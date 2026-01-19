@@ -3,55 +3,105 @@ title: Home
 ---
 
 <style>
-  .wrap { max-width: 980px; margin: 0 auto; padding: 0 14px; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
 
-  /* NAV (centered, clean) */
-  .nav {
-    display: flex;
-    justify-content: center;
-    gap: 28px;
-    flex-wrap: wrap;
-    margin: 14px 0 18px;
-    font-size: 1.05rem;
-  }
-  .nav a {
-    text-decoration: none;
-    color: #0b57d0;
-    font-weight: 600;
-  }
-  .nav a:hover { text-decoration: underline; }
+  /* Layout */
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
 
   /* HERO */
-  .hero { margin: 14px 0 10px; border-radius: 14px; overflow: hidden; border: 1px solid rgba(0,0,0,.08); }
-  .hero img { width: 100%; height: auto; display: block; }
-  .hero-cap { padding: 14px 16px; background: rgba(0,0,0,.02); }
-  .kicker { letter-spacing: .08em; text-transform: uppercase; font-size: .95rem; font-weight: 800; margin: 0; }
-  .title { font-size: 2.0rem; margin: 10px 0 8px; }
-  .lead { font-size: 1.05rem; line-height: 1.65; margin: 0; }
+  .hero {
+    margin: 0 auto 32px;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,.08);
+  }
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .hero-cap {
+    padding: 28px;
+    background: #fff;
+  }
 
-  /* CARDS */
-  .card { border: 1px solid rgba(0,0,0,.08); border-radius: 14px; padding: 16px; background: rgba(0,0,0,.01); }
-  .card h2 { margin-top: 0; font-size: 1.2rem; }
-  .small { font-size: .96rem; line-height: 1.65; }
-  .muted { opacity: .85; }
+  .kicker {
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    font-size: .9rem;
+    opacity: .85;
+    margin-bottom: 10px;
+  }
+  .title {
+    font-size: 2.2rem;
+    margin: 0 0 10px;
+  }
+  .lead {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 900px;
+  }
 
-  /* PROFILE */
-  .profile { display: grid; grid-template-columns: 220px 1fr; gap: 16px; align-items: start; }
-  .avatar { width: 220px; height: 220px; border-radius: 16px; object-fit: cover; border: 1px solid rgba(0,0,0,.08); }
+  /* Pills */
+  .pillrow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+  }
+  .pill {
+    padding: 7px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(0,0,0,.15);
+    font-size: .9rem;
+    background: #fff;
+  }
 
-  /* PILLS */
-  .pillrow { display:flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
-  .pill { padding: 6px 10px; border-radius: 999px; border: 1px solid rgba(0,0,0,.12); font-size: .88rem; background: white; }
+  /* NAV — placed BELOW hero content */
+  .nav {
+    text-align: center;
+    margin: 22px 0 0;
+  }
+  .nav a {
+    margin: 0 14px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #0b5ed7;
+  }
+  .nav a:hover {
+    text-decoration: underline;
+  }
 
-  /* FEATURE IMAGES (two images side-by-side) */
-  .imgrow { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
-  .imgrow img { width: 100%; border-radius: 12px; border: 1px solid rgba(0,0,0,.08); display: block; }
+  /* Cards */
+  .card {
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 16px;
+    padding: 22px;
+    margin: 28px 0;
+    background: rgba(0,0,0,.015);
+  }
 
-  @media (max-width: 820px){
-    .profile { grid-template-columns: 1fr; }
-    .avatar { width: 180px; height: 180px; }
-    .imgrow { grid-template-columns: 1fr; }
-    .nav { gap: 18px; }
+  /* Profile */
+  .profile {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 18px;
+    align-items: start;
+  }
+  .avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 16px;
+    object-fit: cover;
+    border: 1px solid rgba(0,0,0,.1);
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: .85rem;
+    opacity: .75;
   }
 </style>
 
@@ -59,14 +109,20 @@ title: Home
 
   <!-- HERO -->
   <div class="hero">
-    <img src="/assets/img/hero.jpg" alt="Furuya Lab banner image">
+    <img src="/assets/img/hero.jpg" alt="Furuya Lab research illustration">
+
     <div class="hero-cap">
-      <p class="kicker">FURUYA LABORATORY</p>
-      <div class="title">Precision cancer prevention &amp; biomarker-driven early detection</div>
+      <div class="kicker">FURUYA LABORATORY</div>
+
+      <h1 class="title">
+        Precision cancer prevention & biomarker-driven early detection
+      </h1>
 
       <p class="lead">
-        We develop and validate non-invasive biomarkers and integrative multi-omics strategies to enable earlier detection,
-        risk stratification, and precision treatment of cancer—with a major focus on bladder cancer and upper-tract urothelial carcinoma.
+        We develop and validate non-invasive biomarkers and integrative multi-omics
+        strategies to enable earlier detection, risk stratification, and precision
+        treatment of cancer—with a major focus on bladder cancer and upper-tract
+        urothelial carcinoma.
       </p>
 
       <div class="pillrow">
@@ -76,67 +132,54 @@ title: Home
         <span class="pill">Spatial biology</span>
         <span class="pill">Clinical translation</span>
       </div>
+
+      <!-- NAVIGATION MOVED HERE -->
+      <div class="nav">
+        <a href="/">Home</a>
+        <a href="/research">Research</a>
+        <a href="/team">Team</a>
+        <a href="/publications">Publications</a>
+        <a href="/opportunities">Opportunities</a>
+        <a href="/contact">Contact</a>
+      </div>
+
     </div>
   </div>
 
-  <!-- NAV (moved BELOW hero) -->
-  <nav class="nav" aria-label="Primary navigation">
-    <a href="/">Home</a>
-    <a href="/research">Research</a>
-    <a href="/team">Team</a>
-    <a href="/publications">Publications</a>
-    <a href="/opportunities">Opportunities</a>
-    <a href="/contact">Contact</a>
-  </nav>
-
-  <!-- PI PERSONAL STATEMENT -->
+  <!-- PI STATEMENT -->
   <div class="card">
     <h2>PI personal statement</h2>
 
     <div class="profile">
-      <img class="avatar" src="/assets/img/hideki.jpg" alt="Hideki Furuya">
-      <div class="small">
+      <img src="/assets/img/hideki.jpg" alt="Hideki Furuya" class="avatar">
+      <div>
         <strong>Hideki Furuya, PhD</strong><br>
-        <span class="muted">Institution: Cedars-Sinai Medical Center (Los Angeles, CA)</span>
-
-        <p class="small" style="margin-top:12px;">
-          My lab’s goal is to enable precision cancer prevention and earlier, more accurate detection by translating robust biomarker
-          discoveries into clinically scalable assays. We focus on building practical diagnostic tools—grounded in human cohorts and
-          validated with rigorous analytical and clinical study design—while using multi-omics and spatial biology to connect tissue-level
-          mechanisms to measurable, non-invasive signals in urine and blood.
-        </p>
-
-        <p class="small">
-          We are especially interested in bridging early tumor-associated biology with deployable diagnostics that can reduce reliance on
-          invasive procedures, improve risk stratification, and guide personalized surveillance and treatment.
-        </p>
+        Translational cancer researcher focused on biomarker-driven precision prevention,
+        early detection, and clinically scalable assay development.
       </div>
     </div>
-  </div>
 
-  <!-- RESEARCH FOCUS -->
-  <div class="card" style="margin-top:18px;">
-    <h2>Research focus</h2>
-    <ul class="small">
-      <li>Urine-based biomarkers for early detection, prognosis, and prediction of treatment response</li>
-      <li>Multiplex assay development and analytical validation (clinically scalable platforms)</li>
-      <li>Radiogenomics and integrative modeling for precision risk stratification</li>
-      <li>Spatial and multi-omics profiling to connect tissue biology to liquid biomarkers</li>
-    </ul>
-
-    <!-- Two images in the same row -->
-    <div class="imgrow">
-      <img src="/assets/img/feature1.jpg" alt="Multiplex biomarker assay and urine biomarker analysis">
-      <img src="/assets/img/feature2.jpg" alt="Spatial biology, imaging, and radiogenomics">
-    </div>
-
-    <p class="small muted" style="margin:10px 0 0;">
-      Multiplex biomarker assay development, and integrative imaging/spatial biology to connect tissue biology with liquid biomarkers.
+    <p style="margin-top:16px;">
+      My lab’s goal is to enable precision cancer prevention and earlier, more accurate
+      detection by translating robust biomarker discoveries into practical diagnostic
+      tools. We integrate human cohorts, rigorous analytical validation, and multi-omics
+      biology to connect tissue-level mechanisms with non-invasive biomarkers.
     </p>
   </div>
 
-  <p style="margin:28px 0 10px;">
-    <small>© Furuya Lab. All rights reserved.</small>
-  </p>
+  <!-- RESEARCH FOCUS -->
+  <div class="card">
+    <h2>Research focus</h2>
+    <ul>
+      <li>Urine-based biomarkers for early detection and prognosis</li>
+      <li>Multiplex assay development and analytical validation</li>
+      <li>Radiogenomics and integrative modeling</li>
+      <li>Spatial and multi-omics profiling</li>
+    </ul>
+  </div>
 
 </div>
+
+<footer>
+  © Furuya Lab. All rights reserved.
+</footer>
