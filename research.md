@@ -17,16 +17,18 @@ title: Research
   }
 
   .proj {
-    display: grid;
-    grid-template-columns: 1.1fr .9fr;
-    gap: 18px;
-    align-items: start;
-  }
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr; /* give images more space */
+  gap: 24px;
+  align-items: start;
+}
 
-  .proj h2 {
-    margin: 0 0 10px;
-    font-size: 1.25rem;
-  }
+.imggrid2{
+  display: grid;
+  grid-template-columns: 1fr; /* vertical stack */
+  gap: 18px;
+}
+  
 
   .proj p { margin: 0 0 12px; line-height: 1.7; }
   .proj ul { margin: 8px 0 0 18px; }
@@ -139,10 +141,10 @@ title: Research
       </div>
 
       <div class="imgbox">
-        <div class="imggrid2">
-          <img src="/assets/img/Project_2_1.jpg" alt="Project 2 image 1">
-          <img src="/assets/img/Project_2_2.jpg" alt="Project 2 image 2">
-        </div>
+<div class="imggrid2">
+  <img src="/assets/img/Project_2_1.jpg" alt="Project 2 schematic: assay development">
+  <img src="/assets/img/Project_2_2.jpg" alt="Project 2 schematic: analytical validation">
+</div>
         <div class="caption">
           Building practical, clinically scalable biomarker assays—from discovery through validation and deployment.
         </div>
