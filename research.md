@@ -2,214 +2,230 @@
 title: Research
 ---
 
+<nav class="topnav" aria-label="Primary">
+  <a href="/">Home</a>
+  <a href="/research" aria-current="page">Research</a>
+  <a href="/team">Team</a>
+  <a href="/publications">Publications</a>
+  <a href="/opportunities">Opportunities</a>
+  <a href="/contact">Contact</a>
+</nav>
+
 <style>
+  /* Page container */
   .wrap { max-width: 980px; margin: 0 auto; padding: 0 14px; }
 
-  .page-title { margin: 14px 0 6px; font-size: 2.0rem; }
-  .lede { margin: 0 0 16px; font-size: 1.05rem; line-height: 1.7; opacity: .92; }
+  /* Top nav */
+  .topnav{
+    display:flex;
+    justify-content:center;
+    gap: 26px;
+    flex-wrap: wrap;
+    margin: 14px 0 18px;
+    font-weight: 600;
+  }
+  .topnav a{
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 999px;
+  }
+  .topnav a:hover{
+    background: rgba(0,0,0,.04);
+  }
 
-  .card {
+  /* Cards */
+  .card{
     border: 1px solid rgba(0,0,0,.08);
     border-radius: 14px;
     padding: 18px;
     background: rgba(0,0,0,.01);
-    margin: 18px 0;
+    margin: 16px 0;
   }
+  h1{ margin: 10px 0 6px; font-size: 2.0rem; }
+  h2{ margin: 0 0 10px; font-size: 1.25rem; }
+  h3{ margin: 0 0 10px; font-size: 1.05rem; }
+  p, li{ line-height: 1.65; }
+  .lead{ font-size: 1.05rem; margin-top: 6px; }
 
-  .proj {
-    display: grid;
-    grid-template-columns: 1.1fr .9fr;
-    gap: 18px;
+  /* Project layout (text + image) */
+  .proj{
+    display:grid;
+    grid-template-columns: 0.95fr 1.05fr; /* give images more space */
+    gap: 22px;
     align-items: start;
   }
 
-  .proj h2 {
-    margin: 0 0 10px;
-    font-size: 1.25rem;
-  }
-
-  .proj p { margin: 0 0 12px; line-height: 1.7; }
-  .proj ul { margin: 8px 0 0 18px; }
-  .proj li { margin: 6px 0; }
-
-  .tag {
-    display: inline-block;
-    padding: 4px 10px;
-    border-radius: 999px;
-    border: 1px solid rgba(0,0,0,.12);
-    background: white;
-    font-size: .85rem;
-    margin-bottom: 10px;
-  }
-
-  .imgbox img{
+  /* Image styles */
+  .fig img{
     width: 100%;
     height: auto;
     display: block;
     border-radius: 12px;
     border: 1px solid rgba(0,0,0,.08);
+    background: white;
+  }
+  .cap{
+    margin-top: 10px;
+    font-size: .95rem;
+    opacity: .85;
   }
 
-  .caption{
-    margin-top: 8px;
-    font-size: .92rem;
-    opacity: .82;
-    line-height: 1.55;
-  }
-
-  /* Project 2: two images */
+  /* Project 2 stacked images (vertical) */
   .imggrid2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
+    display:grid;
+    grid-template-columns: 1fr; /* vertical stack */
+    gap: 14px;
   }
 
-  .divider{
-    height: 1px;
-    background: rgba(0,0,0,.08);
-    margin: 14px 0 0;
+  /* Small muted text */
+  .muted{ opacity: .85; }
+  .pillrow{ display:flex; flex-wrap:wrap; gap: 8px; margin-top: 10px; }
+  .pill{
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(0,0,0,.12);
+    font-size: .88rem;
+    background: white;
   }
 
-  @media (max-width: 900px){
-    .proj { grid-template-columns: 1fr; }
-    .imggrid2 { grid-template-columns: 1fr; }
+  /* Responsive */
+  @media (max-width: 860px){
+    .proj{ grid-template-columns: 1fr; }
+    .topnav{ gap: 10px; }
+  }
+
+  /* Footer */
+  .site-footer{
+    margin: 28px 0 10px;
+    text-align: center;
+    font-size: .9rem;
+    opacity: .75;
   }
 </style>
 
 <div class="wrap">
 
-  <h1 class="page-title">Research</h1>
-  <p class="lede">
-    Our lab develops biomarker-driven strategies to enable <strong>early detection, risk stratification, and precision prevention</strong>.
-    We combine mechanistic insight with clinically grounded assay development.
-  </p>
+# Research
 
-  <!-- PROJECT 1 -->
-  <div class="card">
-    <div class="proj">
-      <div>
-        <span class="tag">Project 1</span>
-        <h2>Precision prevention and early detection</h2>
-        <p>
-          We seek to identify <strong>measurable biological signals</strong> that emerge before clinically evident cancer,
-          enabling non-invasive detection, longitudinal surveillance, and risk-adapted intervention.
-        </p>
+<p class="lead">
+Our lab develops biomarker-driven strategies to enable <strong>early detection, risk stratification, and precision prevention</strong>.
+We combine mechanistic insight with clinically grounded assay development, integrating multi-omics and spatial biology to connect tissue-level
+states with non-invasive signals.
+</p>
 
-        <p><strong>Conceptual focus</strong></p>
-        <ul>
-          <li>Pre-diagnostic and early tumor–associated biological states</li>
-          <li>Risk stratification beyond presence/absence of disease</li>
-          <li>Prevention-oriented clinical decision support</li>
-        </ul>
+<div class="pillrow">
+  <span class="pill">Urine biomarkers</span>
+  <span class="pill">Multiplex assays</span>
+  <span class="pill">Analytical validation</span>
+  <span class="pill">Radiogenomics</span>
+  <span class="pill">Spatial biology</span>
+</div>
 
-        <p style="margin-top:12px;"><strong>Approach</strong></p>
-        <ul>
-          <li>Carefully curated clinical cohorts</li>
-          <li>PRoBE-style principles when feasible</li>
-          <li>Emphasis on assays compatible with real-world clinical workflows</li>
-        </ul>
-      </div>
+<!-- ===================== PROJECT 1 ===================== -->
+<div class="card">
+  <div class="proj">
+    <div>
+      <h2>Project 1: Precision prevention and early detection</h2>
+      <p>
+        We aim to identify measurable biological signals that precede clinically evident cancer and enable non-invasive detection and surveillance.
+      </p>
+      <p><strong>Approach:</strong> curated cohorts, PRoBE-style principles when feasible, and clinically practical assay designs.</p>
+      <ul>
+        <li>Prospective and retrospective cohort studies</li>
+        <li>Risk stratification and performance benchmarking</li>
+        <li>Translation toward scalable clinical workflows</li>
+      </ul>
+    </div>
 
-      <div class="imgbox">
-        <img src="/assets/img/Project_1.jpg" alt="Project 1 schematic">
-        <div class="caption">
-          Conceptual framework linking early biological changes to biomarker detection and risk-adapted intervention.
-        </div>
-      </div>
+    <div class="fig">
+      <img src="/assets/img/Project_1.jpg" alt="Project 1 figure">
+      <div class="cap">Project 1 overview.</div>
     </div>
   </div>
+</div>
 
-  <!-- PROJECT 2 -->
-  <div class="card">
-    <div class="proj">
-      <div>
-        <span class="tag">Project 2</span>
-        <h2>Biomarker panels and assay development</h2>
-        <p>
-          Our work prioritizes <strong>translation</strong>, with a focus on developing assays that are analytically robust,
-          scalable, and deployable in clinical laboratories.
-        </p>
+<!-- ===================== PROJECT 2 ===================== -->
+<div class="card">
+  <div class="proj">
+    <div>
+      <h2>Project 2: Biomarker panels and assay development</h2>
+      <p>
+        We focus on translation: building assays that are robust, scalable, and compatible with real clinical workflows.
+      </p>
 
-        <p><strong>Translation priorities</strong></p>
-        <ul>
-          <li>Multiplex protein biomarker panels (primarily urine-based)</li>
-          <li>Reproducible quality-control and analytical validation frameworks</li>
-          <li>Systematic bridging from discovery platforms to targeted, locked assays</li>
-        </ul>
+      <h3>Examples of translation priorities</h3>
+      <ul>
+        <li>Multiplex protein panels (urine-based)</li>
+        <li>Reproducible QC frameworks and analytical validation thinking</li>
+        <li>Bridging discovery platforms → targeted assays</li>
+      </ul>
+
+      <p class="muted">
+        (You can refine these bullets later to match your Word figure captions.)
+      </p>
+    </div>
+
+    <div class="fig">
+      <div class="imggrid2">
+        <img src="/assets/img/Project_2_1.jpg" alt="Project 2 image 1">
+        <img src="/assets/img/Project_2_2.jpg" alt="Project 2 image 2">
       </div>
-
-      <div class="imgbox">
-        <div class="imggrid2">
-          <img src="/assets/img/Project_2_1.jpg" alt="Project 2 image 1">
-          <img src="/assets/img/Project_2_2.jpg" alt="Project 2 image 2">
-        </div>
-        <div class="caption">
-          Building practical, clinically scalable biomarker assays—from discovery through validation and deployment.
-        </div>
-      </div>
+      <div class="cap">Project 2 schematic (assay development and analytical validation).</div>
     </div>
   </div>
+</div>
 
-  <!-- PROJECT 3 -->
-  <div class="card">
-    <div class="proj">
-      <div>
-        <span class="tag">Project 3</span>
-        <h2>Spatial and multi-omics biology</h2>
-        <p>
-          We connect <strong>tissue-level biology</strong> to measurable biomarkers and clinical outcomes,
-          enabling mechanistic interpretation of non-invasive signals.
-        </p>
+<!-- ===================== PROJECT 3 ===================== -->
+<div class="card">
+  <div class="proj">
+    <div>
+      <h2>Project 3: Spatial and multi-omics biology</h2>
+      <p>
+        We connect tissue-level biology to urine/tissue biomarkers and outcomes to better understand early tumor-associated states and their clinical implications.
+      </p>
 
-        <p><strong>Representative methods</strong></p>
-        <ul>
-          <li>Spatial transcriptomics and spatial proteomics</li>
-          <li>Bulk profiling with targeted validation</li>
-          <li>Integrative analysis across cohorts, platforms, and experimental models</li>
-        </ul>
-      </div>
+      <h3>Methods (examples)</h3>
+      <ul>
+        <li>Spatial transcriptomics / spatial proteomics</li>
+        <li>Bulk profiling + targeted validation</li>
+        <li>Integrative analysis across datasets and models</li>
+      </ul>
+    </div>
 
-      <div class="imgbox">
-        <img src="/assets/img/Project_3.jpg" alt="Project 3 schematic">
-        <div class="caption">
-          Integrating spatial biology and multi-omics to link tissue states with liquid biomarkers and outcomes.
-        </div>
-      </div>
+    <div class="fig">
+      <img src="/assets/img/Project_3.jpg" alt="Project 3 figure">
+      <div class="cap">Project 3 overview.</div>
     </div>
   </div>
+</div>
 
-  <!-- PROJECT 4 -->
-  <div class="card">
-    <div class="proj">
-      <div>
-        <span class="tag">Project 4</span>
-        <h2>Experimental models to support temporal biology</h2>
-        <p>
-          We leverage experimental models to understand <strong>how early tumor-associated states evolve over time</strong>
-          and how these dynamics shape detectable biomarker signals.
-        </p>
+<!-- ===================== PROJECT 4 ===================== -->
+<div class="card">
+  <div class="proj">
+    <div>
+      <h2>Project 4: Experimental models supporting temporal biology</h2>
+      <p>
+        We leverage experimental models to understand how early tumor-associated biological states evolve over time and how these changes shape detectable biomarker signals.
+      </p>
 
-        <p><strong>Goals</strong></p>
-        <ul>
-          <li>Define temporal trajectories of tumor initiation and progression</li>
-          <li>Link evolving tissue biology to urine- and tissue-based biomarkers</li>
-          <li>Support hypothesis-driven interpretation of clinical findings</li>
-        </ul>
-      </div>
+      <ul>
+        <li>Model development for disease initiation and progression</li>
+        <li>Temporal profiling and cross-modal comparisons</li>
+        <li>Mechanistic studies to connect biology to biomarkers</li>
+      </ul>
 
-      <div class="imgbox">
-        <img src="/assets/img/Project_4.jpg" alt="Project 4 schematic">
-        <div class="caption">
-          Modeling temporal evolution of early lesions to interpret biomarker emergence and progression risk.
-        </div>
-      </div>
+      <p>
+        If you’d like to collaborate, please reach out via <a href="/contact"><strong>Contact</strong></a>.
+      </p>
+    </div>
+
+    <div class="fig">
+      <img src="/assets/img/Project_4.jpg" alt="Project 4 figure">
+      <div class="cap">Project 4 overview.</div>
     </div>
   </div>
+</div>
 
-  <div class="divider"></div>
-
-  <p style="margin:16px 0 0; font-size:.98rem;">
-    If you’d like to collaborate, please reach out via <a href="/contact">Contact</a>.
-  </p>
+<p class="site-footer"><small>© Furuya Lab. All rights reserved.</small></p>
 
 </div>
