@@ -59,12 +59,6 @@ title: Research
     line-height: 1.55;
   }
 
-  /* Project 2: two images */
-  .imggrid2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-  }
 
   .divider{
     height: 1px;
