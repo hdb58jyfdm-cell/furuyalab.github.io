@@ -2,14 +2,6 @@
 title: Research
 ---
 
-<nav class="topnav" aria-label="Primary">
-  <a href="/">Home</a>
-  <a href="/research" aria-current="page">Research</a>
-  <a href="/team">Team</a>
-  <a href="/publications">Publications</a>
-  <a href="/opportunities">Opportunities</a>
-  <a href="/contact">Contact</a>
-</nav>
 
 <style>
   /* Page container */
